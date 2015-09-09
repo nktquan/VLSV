@@ -227,3 +227,8 @@ nav{
 .pagination li a:hover{
     color: #40c4ff !important;
 }
+
+.detail-icon{
+    width: 30px;
+    color: #40c4ff;
+}
