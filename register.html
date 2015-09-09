@@ -12,24 +12,35 @@
 <body>
 <div class="container">
     <div class="row">
-        <div class="col l6 m8 s10 offset-l3 offset-m2 offset-s1">
+        <div class="col l6 m8 s12 offset-l3 offset-m2">
             <div class="col l12 m12 s12">
-                <div class="card category login-box">
+                <div class="card category register-box">
                     <div class="card-action light-blue lighten-1 center-align">
-                        <span class="card-title">ĐĂNG NHẬP</span>
+                        <span class="card-title">ĐĂNG KÝ</span>
                     </div>
                     <div class="card-content">
                         <form action="#">
-                            <div class="row">
+                            <div class="row none-margin">
                                 <div class="input-field col s12">
-                                    <input id="username" type="text" class="validate">
-                                    <label for="username">Tên đăng nhập</label>
+                                    <input id="fullname" type="text" class="validate">
+                                    <label for="fullname">Họ và tên</label>
                                 </div>
                             </div>
-                            <div class="row">
+                            <div class="row none-margin">
+                                <div class="input-field col s12">
+                                    <input id="email" type="text" class="validate">
+                                    <label for="email">Email</label>
+                                </div>
+                            </div>
+                            <div class="row none-margin">
                                 <div class="input-field col s12">
                                     <input id="password" type="password" class="validate">
                                     <label for="password">Mật khẩu</label>
+                                </div>
+                            </div>
+                            <div class="row none-margin">
+                                <div class="input-field col s12">
+                                    <div class="g-recaptcha" data-sitekey="6LeSjgwTAAAAADHEuaeTltbUasU70GgrXS8Vbw7v"></div>
                                 </div>
                                 <p class="center-align"><a href="#">Quên mật khẩu ?</a></p>
                             </div>
@@ -37,7 +48,7 @@
                     </div>
                     <div class="card-action center-align">
                         <button type="submit" class="waves-effect waves-light btn light-blue lighten-1">Đăng ký</button>
-                        <button type="submit" class="waves-effect waves-light btn light-blue lighten-1">Đăng nhập</button>
+                        <button type="submit" class="waves-effect waves-light btn light-blue lighten-1 left-margin-15">Đăng nhập</button>
                     </div>
                 </div>
             </div>
@@ -46,6 +57,7 @@
 </div>
 <script type="text/javascript" src="./js/jquery-2.1.1.min.js"></script>
 <script type="text/javascript" src="./js/materialize.min.js"></script>
+<script src='//www.google.com/recaptcha/api.js'></script>
 <script type="text/javascript">
     $(document).ready(function() {
         $('select').material_select();

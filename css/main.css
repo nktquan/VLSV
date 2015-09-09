@@ -211,3 +211,19 @@ nav{
 .login-box{
     margin-top: 20%;
 }
+
+.register-box{
+    margin-top: 5%;
+}
+
+.g-recaptcha{
+    margin-bottom: 20px;
+}
+
+.pagination li.disabled a:hover{
+    color: #ccc !important;
+}
+
+.pagination li a:hover{
+    color: #40c4ff !important;
+}
