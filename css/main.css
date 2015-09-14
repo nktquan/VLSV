@@ -232,3 +232,56 @@ nav{
     width: 30px;
     color: #40c4ff;
 }
+
+.list-search{
+    float: right;
+    margin: 10px 10px;
+}
+
+.avatar{
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+}
+
+.profile{
+    width: 100%;
+    margin: 30px 0;
+}
+
+.upload{
+    width: 200px;
+    height: 70px;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    bottom: 0;
+    cursor: pointer;
+    display: block;
+    padding: 20px;
+    opacity: 0;
+}
+
+.avatar:hover .upload{
+    opacity: 1;
+}
+
+[type="radio"]:checked+label:after{
+    border-color: #40c4ff;
+    background-color: #40c4ff;
+}
+
+.size-15{
+    font-size: 15px !important;
+}
+
+.select-wrapper input.select-dropdown{
+    color: #40c4ff;
+}
+
+.modal{
+    max-height: 95% !important;
+    top: 2% !important;
+}
